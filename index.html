@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗡𝗢𝗧𝗘𝗦</title>
+    <link rel="icon" href="https://i.ibb.co/yFXqs3wZ/x.jpg" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #63286A;
+            padding-top: 70px;
+        }
+        .header {
+            background-color: #B82C5D;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                font-size: 18px;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .header {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+         .circle-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .circle-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .card { position: relative; border: 2px solid #ccc; border-radius: 20px; margin: 20px; padding: 30px; background-color: #fff; cursor: pointer; font-size: 20px; font-weight: bold; transition: background-color 0.3s, transform 0.3s; border-left: 10px solid #F2364D; }
+
+        .second-card { font-size: 20px; padding: 25px; width: 75%; margin: 20px auto; border-radius: 10px; border-left: 6px solid #F0FF00; }
+         
+       .third-card { font-size: 20px; padding: 25px; width: 75%; margin: 20px auto; border-radius: 10px; border-left: 6px solid #FF5733; }
+
+        .card svg { position: absolute; top: 50%; right: 20px; transform: translateY(-50%); fill: #7133FF; }
+
+        .second-card svg { fill: #FF5733; }
+        .third-card svg { fill: #FF5733; }
+        
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(113, 51, 255, 0.5), 0 6px 15px rgba(113, 51, 255, 0.3);
+        }
+
+       .second-card:hover {
+           transform: translateY(-5px);
+           box-shadow: 0 4px 10px rgba(255, 87, 51, 0.5), 0 6px 15px rgba(255, 87, 51, 0.3);
+        }
+        
+      .third-card:hover {
+           transform: translateY(-5px);
+           box-shadow: 0 4px 10px rgba(255, 87, 51, 0.5), 0 6px 15px rgba(255, 87, 51, 0.3);
+        }
+        
+
+        .subcards {
+            display: none;
+            padding-left: 20px;
+        }
+
+       .subcard { position: relative; border: 1px solid #ddd; border-radius: 5px; margin: 10px 0; padding: 10px; background-color: #fff; cursor: pointer; font-size: 15px; font-weight: bold; transition: background-color 1s, transform 1s; border-left: 6px solid #00FFFF; }
+
+       .subcard svg {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            fill: #00FFFF;
+            opacity: 0;
+            transition: opacity 0.3s;
+       }
+
+       .subcard:hover svg {
+            opacity: 1;
+       }
+
+       .subcard:hover {
+           transform: translateY(-5px);
+           box-shadow: 0 4px 10px rgba(0, 255, 255, 0.5), 0 6px 15px rgba(0, 255, 255, 0.3);
+       }
+
+      .button-container {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 1000;
+      }
+
+      .btn {
+          display: flex;
+          align-items: center;
+          background-color: #05a044;
+          color: #fff;
+          border: none;
+          border-radius: 25px;
+          padding: 10px 20px;
+          font-size: 16px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background-color 0.3s, transform 0.3s;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          text-decoration: none;
+      }
+
+      .btn svg {
+          margin-right: 10px;
+      }
+
+      .btn:hover {
+          background-color: #05a044;
+          transform: translateY(-3px);
+      }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+         <marquee behavior="alternate" direction="left" scrollamount="2" width="100%" height="30" onmouseover="this.stop()" onmouseout="this.start()" loop="10000" style="animation: slide 5s linear infinite alternate; font-size: 2em; color: yellow;">By HACKHEIST 😈</marquee>
+    </div>
+     <div class="circle-image">
+        <img src="https://i.ibb.co/yFXqs3wZ/x.jpg" alt="Profile Image">
+    </div>
+
+    <h2 id="subject-title" class="title">😃 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗡𝗢𝗧𝗘𝗦 🫂</h2>
+
+  <p style="color:#00FFDA; font-size:16px;">𝗦𝗰𝗿𝗼𝗹𝗹 𝗗𝗼𝘄𝗻 𝗳𝗼𝗿 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗮𝗻𝗱 𝗶𝗳 𝘆𝗼𝘂 𝗵𝗮𝘃𝗲 𝗣𝗗𝗙𝘀 𝗦𝗵𝗮𝗿𝗲 𝘁𝗼 𝗛𝗲𝗹𝗽 𝗢𝘁𝗵𝗲𝗿𝘀👇👇</p>
+ <p style="color:#00FFDA; font-size:16px;">And in this Website All material Are Copied through Online Public Resources nothing any Piracy related</p>
+</div>
+ <div style="display: flex; justify-content: center; height: 8vh;">
+  <button style="background-color:#D7A07C; color:black; padding:15px 40px; font-size:24px; border-radius: 40px;"><a href="https://yashyasag.github.io/hiddens_officials" style="color:white; text-decoration:none;">𝗢𝘂𝗿 𝗠𝗔𝗜𝗡 𝗪𝗲𝗯𝘀𝗶𝘁𝗲</a></button>
+</div>
+    <div id="cards-container">
+         <!-- Cards div through JS -->
+    </div>
+
+    <div class="button-container">
+         <a href="https://t.me/HIDDEN_OFFICIALS_5" class="btn" target="_blank" rel="noopener noreferrer">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+          </svg>
+          <span>JOiN BACKUP</span>
+       </a>
+    </div>
+
+<script>
+const firstcardsData = [
+         {
+        text: '𝗠𝗮𝗻𝘇𝗶𝗹 𝗣𝗮𝗼',
+        secondcards: [
+            {
+                text: '𝐌𝐀𝐍𝐙𝐈𝐋 𝟐𝟎𝟐𝟓',
+                subcards: [
+                    { text: 'Physics YT', url: 'https://youtube.com/playlist?list=PLxyGaR3hEy3gvV4VbbP8pza7MtoJkGu6M' },
+{ text: 'Physics Notes', url: 'https://opmasterweb.github.io/servers/?token=Z2V0LTQ1MTE2MjA2NDY0NTgxNDcyLTQ1MTM4MjYxMzE2MTk5NTY4' },
+{ text: 'Maths YT', url: 'https://youtube.com/playlist?list=PLxyGaR3hEy3gk_Li5kx4pJ7TSOYE2EQPQ&si=C_Wc8e68Y9XrGbt9' },
+{ text: 'Maths Notes', url: 'https://opmasterweb.github.io/servers/?token=Z2V0LTQ1MTQwMjY2MzAyNzEwMzA0LTQ1MTY3MzMzNjIwNjA1MjQw' },
+{ text: 'Chemistry YT', url: 'https://youtube.com/playlist?list=PLxyGaR3hEy3joVGFUCCKG5BIKBSBW5ihL' },
+{ text: 'Chemistry Notes', url: 'https://opmasterweb.github.io/servers/?token=Z2V0LTQ1MTY4MzM2MTEzODYwNjA4LTQ1MTkxMzkzNDU4NzM0MDcy' }
+                ]
+            }
+            ]
+    }
+];
+
+function createCard(cardData, isSecondCard = false) {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+        ${cardData.text}
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="${isSecondCard ? '#FF0000' : '#FF0000'}" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+        </svg>
+    `;
+
+    if (isSecondCard) {
+        card.classList.add('second-card');
+        card.addEventListener('click', function () {
+            const subcards = this.nextElementSibling;
+            if (subcards.style.display === 'none' || subcards.style.display === '') {
+                subcards.style.display = 'block';
+            } else {
+                subcards.style.display = 'none';
+            }
+        });
+    } else {
+        card.addEventListener('click', function () {
+            const secondCards = this.nextElementSibling;
+            if (secondCards.style.display === 'none' || secondCards.style.display === '') {
+                secondCards.style.display = 'block';
+            } else {
+                secondCards.style.display = 'none';
+            }
+        });
+    }
+
+    const subcardsContainer = document.createElement('div');
+    subcardsContainer.className = 'subcards';
+
+    cardData.subcards?.forEach(subcardData => {
+        const subcard = document.createElement('div');
+        subcard.className = 'subcard';
+        subcard.innerHTML = `
+            ${subcardData.text}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00FFFF" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                <path d="M4.715 6.542a3.025 3.025 0 0 1 0-4.27l1.795-1.796a3.025 3.025 0 0 1 4.271 0l1.795 1.796a3.025 3.025 0 0 1 0 4.27l-.69.691a.5.5 0 1 1-.708-.708l.69-.691a2.025 2.025 0 0 0 0-2.855L10.06 2.12a2.025 2.025 0 0 0-2.855 0L5.412 3.915a2.025 2.025 0 0 0 0 2.855.5.5 0 0 1-.707.707ZM11.284 9.457a3.025 3.025 0 0 1 0 4.271l-1.796 1.795a3.025 3.025 0 0 1-4.27 0L3.923 13.73a3.025 3.025 0 0 1 0-4.271l.69-.69a.5.5 0 0 1 .707.707l-.69.69a2.025 2.025 0 0 0 0 2.855l1.795 1.795a2.025 2.025 0 0 0 2.855 0l1.796-1.795a2.025 2.025 0 0 0 0-2.855.5.5 0 1 1 .707-.707Z"/>
+            </svg>
+        `;
+        subcard.addEventListener('click', () => window.open(subcardData.url, '_blank'));
+        subcardsContainer.appendChild(subcard);
+    });
+
+    cardData.secondcards?.forEach(secondCardData => {
+        const secondCard = createCard(secondCardData, true);
+        subcardsContainer.appendChild(secondCard);
+    });
+
+    const container = document.createElement('div');
+    container.appendChild(card);
+    container.appendChild(subcardsContainer);
+
+    return container;
+}
+
+function initializeCards() {
+    const cardsContainer = document.getElementById('cards-container');
+    firstcardsData.forEach(cardData => {
+        const card = createCard(cardData);
+        cardsContainer.appendChild(card);
+    });
+}
+
+initializeCards();
+</script>
+<div>
+<p style="color: black; font-size:16px;">𝗡𝗢𝗧𝗘 :- 𝐍𝐨 𝐚𝐧𝐲 𝐂𝐨𝐚𝐜𝐡𝐢𝐧𝐠 𝐡𝐚𝐫𝐦𝐞𝐝 𝐢𝐟 𝐬𝐭𝐢𝐥𝐥 𝐚𝐧𝐲 𝐩𝐫𝐨𝐛𝐥𝐞𝐦 𝐑𝐞𝐥𝐚𝐭𝐞𝐝 𝐭𝐨 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 𝐭𝐡𝐞𝐧 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐦𝐞 𝐨𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐈 𝐑𝐞𝐦𝐨𝐯𝐞 𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝐨𝐫 𝐃𝐨𝐰𝐧 𝐭𝐡𝐢𝐬 𝐰𝐞𝐛𝐬𝐢𝐭𝐞 . 𝐒𝐨, 𝙞𝙛 𝙮𝙤𝙪 𝙝𝙖𝙫𝙚 𝙖𝙣𝙮 𝙥𝙧𝙤𝙗𝙡𝙚𝙢 𝙟𝙪𝙨𝙩 𝙘𝙤𝙣𝙩𝙖𝙘𝙩 𝙢𝙚 🙏🙏</p>
+<div style="display: flex; justify-content: center; height: 5vh;"> <button style="background-color:#FF0042; color:white; padding:5px 30px; font-size:16px; border-radius: 20px;"><a href="https://t.me/team_hiddens_bot" style="color:white; text-decoration:none;">𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗨𝗦 🙏🙏</a></button> </div>
+</body>
+</html>
